@@ -13,7 +13,7 @@ namespace UITest
         {
             if (platform == Platform.Android)
             {
-                return ConfigureApp.Android.InstalledApp("com.companyname.xamarinuitests").StartApp(Xamarin.UITest.Configuration.AppDataMode.DoNotClear);
+                return ConfigureApp.Android.InstalledApp("com.companyname.xamarinuitests").DeviceSerial("1170191635").StartApp(Xamarin.UITest.Configuration.AppDataMode.DoNotClear);
             }
 
             return ConfigureApp.iOS.StartApp();
